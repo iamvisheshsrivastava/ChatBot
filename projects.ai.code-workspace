@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": ".rasa"
+		},
+		{
+			"path": "actions"
+		},
+		{
+			"path": "data"
+		},
+		{
+			"path": "models"
+		},
+		{
+			"path": "tests"
+		}
+	],
+	"settings": {}
+}

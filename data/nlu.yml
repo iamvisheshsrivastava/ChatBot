@@ -1,0 +1,86 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: notify_email
+  examples: |
+    - Notify [srivastava.vishesh9@gmail.com](recipient_email) tomorrow morning about the meeting.
+    - Send me an email notification for the conference at [example2@gmail.com](recipient_email).
+    - I need an email reminder for my appointment. Send it to [example3@gmail.com](recipient_email).
+    - Can you email me about the event at [john.doe@example.com](recipient_email)?
+
+- intent: add_checklist
+  examples: |
+    - I want to add a new checklist
+    - Create a new checklist for me
+
+- intent: get_user_lists
+  examples: |
+    - Show me all my lists
+    - Get my project lists
+
+- intent: schedule_zoom_meeting
+  examples: |
+    - Schedule a Zoom meeting
+    - Set up a meeting on Zoom
+    - Can you book a Zoom call?
+
+- intent: create_user
+  examples: |
+    - I need to create a new user
+    - Register a user in the system
+
+- intent: update_user
+  examples: |
+    - Update my user information
+    - Change details for a user
+
+- intent: delete_user
+  examples: |
+    - I need to delete a user account
+    - Remove a user from the system
+
+- intent: upload_file
+  examples: |
+    - I want to upload a file
+    - Can you store this document?
+
+- intent: read_file
+  examples: |
+    - Open this file for me
+    - Show me the content of this document

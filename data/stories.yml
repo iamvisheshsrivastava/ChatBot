@@ -1,0 +1,64 @@
+version: "3.1"
+stories:
+- story: greeting story
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- story: Projects AI Add Checklist
+  steps:
+  - intent: add_checklist
+  - action: action_projects_ai_request
+  - action: utter_confirm_checklist_addition
+
+- story: Projects AI Get User Lists
+  steps:
+  - intent: get_user_lists
+  - action: action_projects_ai_request
+  - action: utter_show_user_lists
+
+- story: schedule Zoom meeting
+  steps:
+  - intent: schedule_zoom_meeting
+  - action: action_generic_dispatcher
+  - action: utter_zoom_meeting_scheduled
+
+- story: create a new user
+  steps:
+  - intent: create_user
+  - action: action_create_user
+  - action: utter_user_created
+
+- story: update user information
+  steps:
+  - intent: update_user
+  - action: action_update_user
+  - action: utter_user_updated
+
+- story: delete a user
+  steps:
+  - intent: delete_user
+  - action: action_delete_user
+  - action: utter_user_deleted
+
+- story: upload a file
+  steps:
+  - intent: upload_file
+  - action: action_upload_list_entry_files
+  - action: utter_file_uploaded
+
+- story: read a file
+  steps:
+  - intent: read_file
+  - action: action_read_list_entry_file
+  - action: utter_file_content_shown

@@ -1,0 +1,5 @@
+rules:
+- rule: Use OpenAI for fallback
+  steps:
+  - intent: nlu_fallback
+  - action: action_openai_response
