@@ -1,0 +1,23 @@
+language: en
+pipeline:
+- name: WhitespaceTokenizer
+- name: RegexFeaturizer
+- name: LexicalSyntacticFeaturizer
+- name: CountVectorsFeaturizer
+- name: CountVectorsFeaturizer
+  analyzer: char_wb
+  min_ngram: 1
+  max_ngram: 4
+- name: DIETClassifier
+  epochs: 100
+  constrain_similarities: true
+- name: FallbackClassifier
+  threshold: 0.9
+  ambiguity_threshold: 0.1
+
+policies:
+- name: MemoizationPolicy
+- name: TEDPolicy
+- name: RulePolicy
+  fallback_action_name: "action_openai_response"
+assistant_id: 20231015-174607-humane-geometry

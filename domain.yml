@@ -1,0 +1,59 @@
+version: "3.1"
+intents:
+  - greet
+  - goodbye
+  - bot_challenge
+  - nlu_fallback
+  - add_checklist
+  - get_user_lists
+  - schedule_zoom_meeting
+  - create_user
+  - update_user
+  - delete_user
+  - upload_file
+  - read_file
+
+entities:
+  - recipient_email
+
+slots:
+  recipient_email:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: recipient_email
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+  utter_goodbye:
+  - text: "Bye"
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+  utter_confirm_checklist_addition:
+  - text: "Your checklist has been added."
+  utter_show_user_lists:
+  - text: "Here are your lists."
+  utter_zoom_meeting_scheduled:
+  - text: "Zoom meeting scheduled successfully."
+  utter_user_created:
+  - text: "User created successfully."
+  utter_user_updated:
+  - text: "User updated successfully."
+  utter_user_deleted:
+  - text: "User deleted successfully."
+  utter_file_uploaded:
+  - text: "File uploaded successfully."
+  utter_file_content_shown:
+  - text: "Here's the file content."
+
+actions:
+  - action_openai_response
+  - action_projects_ai_request
+  - action_generic_dispatcher
+  - action_create_user
+  - action_update_user
+  - action_delete_user
+  - action_upload_list_entry_files
+  - action_read_list_entry_file

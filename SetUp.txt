@@ -1,0 +1,36 @@
+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
+
+cretate a new environment - python -m venv venv_rasa
+
+activate the environment - .\venv_rasa\Scripts\activate
+
+
+To run the website - rasa run --enable-api --cors "*"
+To run the actions - rasa run actions
+
+
+nlu.yml 
+rules.yml
+stories.yml
+domain.yml
+
+Notify srivastava.vishesh9@gmail.com tomorrow morning about the meeting.
+
+Send me an email notification for the conference at srivastava.vishesh9@gmail.com 
+
+API SMTP - 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
+
+
+
+notion.ai
+
+
+<<----OTHER PROJECT MANAGEMENT TOOLS---->>
+asana
+basecamp
+trello
+jira software
+monday.com
+todoist
+excel and csv
+Wrike
